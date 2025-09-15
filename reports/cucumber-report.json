@@ -1,0 +1,239 @@
+[
+  {
+    "description": "  As a user\n  I want to login to the application\n  So that I can access my dashboard",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-page;invalid-email-format",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Invalid email format",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 86705525
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "tests/steps/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4335756006
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter \"invalidemail\" in the email field",
+            "match": {
+              "location": "tests/steps/login.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2361805146
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the password field",
+            "match": {
+              "location": "tests/steps/login.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41917826
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see an error message \"Must be a valid email\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:25"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5003702943,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/home/ebpearls/Desktop/New Folder 4/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:611:17)\n    at processTimers (node:internal/timers:546:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 28405133
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;invalid-credentials",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84198081
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "tests/steps/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4357490581
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I login with email \"sadikshya.bhusal+uat@ebpearls.com\" and password \"WrongPassword\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2400489053
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see an error message \"Invalid login credentials\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 873562325
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48635479
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;valid-credentials",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 85946593
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "tests/steps/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4239382582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I login with email \"sadikshya.bhusal+uat2@ebpearls.com\" and password \"Sadikshya@123\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2420333182
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see a success alert \"Login successful!\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:30"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5001153260,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/home/ebpearls/Desktop/New Folder 4/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:611:17)\n    at processTimers (node:internal/timers:546:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "I should see my username \"Hi Jennifer Sharma\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35658208
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Page",
+    "tags": [],
+    "uri": "tests/features/login.feature"
+  }
+]
