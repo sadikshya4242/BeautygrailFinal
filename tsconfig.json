@@ -5,12 +5,14 @@
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
+    "baseUrl": ".",
     "types": ["node"]
   },
   "include": [
-   "tests/**/*.ts",
+    "tests/**/*.ts",
     "support/**/*.ts",
     "locators/**/*.ts",
     "playwright.config.ts"

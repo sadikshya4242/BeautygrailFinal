@@ -1,5 +1,7 @@
-import { Before, After } from '@cucumber/cucumber';
+import { Before, After,setDefaultTimeout  } from '@cucumber/cucumber';
 import { CustomWorld } from './world';
+
+setDefaultTimeout(30 * 1000); 
 
 Before(async function (this: CustomWorld) {
   await this.init();

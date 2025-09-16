@@ -1,12 +1,12 @@
 [
   {
-    "description": "  As a user\n  I want to login to the application\n  So that I can access my dashboard",
+    "description": "  As a salon user\n  I want to be able to log So that I can access the salon dashboard",
     "elements": [
       {
         "description": "",
         "id": "login-page;invalid-email-format",
         "keyword": "Scenario",
-        "line": 6,
+        "line": 5,
         "name": "Invalid email format",
         "steps": [
           {
@@ -14,60 +14,59 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 86705525
+              "duration": 319083641
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
+            "line": 6,
             "name": "I navigate to the login page",
             "match": {
               "location": "tests/steps/login.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4335756006
+              "duration": 8179150403
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 8,
+            "line": 7,
             "name": "I enter \"invalidemail\" in the email field",
             "match": {
               "location": "tests/steps/login.steps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 2361805146
+              "duration": 2871614361
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
+            "line": 8,
             "name": "I click on the password field",
             "match": {
               "location": "tests/steps/login.steps.ts:17"
             },
             "result": {
               "status": "passed",
-              "duration": 41917826
+              "duration": 49455898
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
+            "line": 9,
             "name": "I should see an error message \"Must be a valid email\"",
             "match": {
-              "location": "tests/steps/login.steps.ts:25"
+              "location": "tests/steps/login.steps.ts:28"
             },
             "result": {
-              "status": "failed",
-              "duration": 5003702943,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/home/ebpearls/Desktop/New Folder 4/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:611:17)\n    at processTimers (node:internal/timers:546:7)"
+              "status": "passed",
+              "duration": 8291137
             }
           },
           {
@@ -75,7 +74,73 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 28405133
+              "duration": 73389321
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;sign-in-with-empty-fields",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Sign in with empty fields",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 331663672
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "tests/steps/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4834082993
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click on the \"Sign in\" button without entering email and password",
+            "match": {
+              "location": "tests/steps/login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1916221529
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see an error message for empty fields",
+            "match": {
+              "location": "tests/steps/login.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9335877
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 68084777
             }
           }
         ],
@@ -86,7 +151,7 @@
         "description": "",
         "id": "login-page;invalid-credentials",
         "keyword": "Scenario",
-        "line": 12,
+        "line": 16,
         "name": "Invalid credentials",
         "steps": [
           {
@@ -94,46 +159,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 84198081
+              "duration": 337709922
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 13,
+            "line": 17,
             "name": "I navigate to the login page",
             "match": {
               "location": "tests/steps/login.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4357490581
+              "duration": 4362726505
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 14,
+            "line": 18,
             "name": "I login with email \"sadikshya.bhusal+uat@ebpearls.com\" and password \"WrongPassword\"",
             "match": {
-              "location": "tests/steps/login.steps.ts:21"
+              "location": "tests/steps/login.steps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 2400489053
+              "duration": 2461014028
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
+            "line": 19,
             "name": "I should see an error message \"Invalid login credentials\"",
             "match": {
-              "location": "tests/steps/login.steps.ts:25"
+              "location": "tests/steps/login.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 873562325
+              "duration": 869905286
             }
           },
           {
@@ -141,7 +206,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 48635479
+              "duration": 94470927
             }
           }
         ],
@@ -152,7 +217,7 @@
         "description": "",
         "id": "login-page;valid-credentials",
         "keyword": "Scenario",
-        "line": 17,
+        "line": 21,
         "name": "Valid credentials",
         "steps": [
           {
@@ -160,60 +225,59 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 85946593
+              "duration": 338222707
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 18,
+            "line": 22,
             "name": "I navigate to the login page",
             "match": {
               "location": "tests/steps/login.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4239382582
+              "duration": 4235150497
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 19,
+            "line": 23,
             "name": "I login with email \"sadikshya.bhusal+uat2@ebpearls.com\" and password \"Sadikshya@123\"",
             "match": {
-              "location": "tests/steps/login.steps.ts:21"
+              "location": "tests/steps/login.steps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 2420333182
+              "duration": 2457567707
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
-            "name": "I should see a success alert \"Login successful!\"",
+            "line": 24,
+            "name": "I should be navigated to dashboard page",
             "match": {
-              "location": "tests/steps/login.steps.ts:30"
+              "location": "tests/steps/login.steps.ts:40"
             },
             "result": {
-              "status": "failed",
-              "duration": 5001153260,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/home/ebpearls/Desktop/New Folder 4/node_modules/@cucumber/cucumber/src/time.ts:52:14)\n    at listOnTimeout (node:internal/timers:611:17)\n    at processTimers (node:internal/timers:546:7)"
+              "status": "passed",
+              "duration": 1863466100
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
+            "line": 25,
             "name": "I should see my username \"Hi Jennifer Sharma\"",
             "match": {
-              "location": "tests/steps/login.steps.ts:36"
+              "location": "tests/steps/login.steps.ts:44"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 548394940
             }
           },
           {
@@ -221,7 +285,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 35658208
+              "duration": 67404924
             }
           }
         ],

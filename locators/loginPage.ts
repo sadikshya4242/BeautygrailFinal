@@ -5,26 +5,32 @@ export class LoginPage {
   readonly emailInput: Locator;
   readonly passwordInput: Locator;
   readonly loginButton: Locator;
-  readonly form: Locator;
+  readonly invalidError: Locator;
+  readonly invalidEmail:Locator;
+  readonly emailRequiredError: Locator;
+  readonly passwordRequiredError: Locator;
+
+
   readonly banner: Locator;
 
   constructor(page: Page) {
     this.page = page;
 
-    // Input field for Email
-    this.emailInput = page.getByRole('textbox', { name: 'Email' }); // Add your locator here
+    this.emailInput = page.getByRole('textbox', { name: 'Email' });
 
-    // Input field for Password
-    this.passwordInput = page.getByRole('textbox', { name: 'Password' }); // Add your locator here
+    this.passwordInput = page.getByRole('textbox', { name: 'Password' }); 
 
-    // Sign in button
-    this.loginButton = page.getByRole('button', { name: 'Sign in now' }); // Add your locator here
+    this.loginButton = page.getByRole('button', { name: 'Sign in now' }); 
+   
+    this.invalidError = page.locator('//div[contains(@class, "MuiAlert-message") and text()="Invalid login credentials"]'); 
+    
+    this.invalidEmail = page.locator('text=Must be a valid email');
 
-    // Form container
-    this.form = page.locator('form'); // Add your locator here
+    this.banner = page.getByRole('banner'); 
 
-    // Banner containing username after login
-    this.banner = page.getByRole('banner'); // Add your locator here
+    this.emailRequiredError = page.locator('text=Email is required'); 
+
+    this.passwordRequiredError = page.locator('text=Password is required'); 
   }
 
   /**
@@ -48,4 +54,17 @@ export class LoginPage {
     await this.passwordInput.fill(password);
     await this.loginButton.click();
   }
+  async getEmailRequiredError() {
+    return await this.emailRequiredError.textContent();
+ }
+ async getPasswordRequiredError() {
+   return await this.passwordRequiredError.textContent();
+}
+ async emptylogin() {
+    await this.emailInput.fill('');
+    await this.passwordInput.fill('');
+    await this.loginButton.click();
+  }
+
+
 }
