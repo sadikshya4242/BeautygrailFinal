@@ -1,12 +1,12 @@
 [
   {
-    "description": "  As a salon user\n  I want to be able to log So that I can access the salon dashboard",
+    "description": "  As a CMS admin\n  I want to be able to log in\n  So that I can access the CMS dashboard",
     "elements": [
       {
         "description": "",
-        "id": "login-page;invalid-email-format",
+        "id": "cms-login-page;invalid-email-format",
         "keyword": "Scenario",
-        "line": 5,
+        "line": 7,
         "name": "Invalid email format",
         "steps": [
           {
@@ -14,59 +14,59 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 319083641
+              "duration": 298181657
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
-            "name": "I navigate to the login page",
+            "line": 8,
+            "name": "I navigate to the cms login page",
             "match": {
-              "location": "tests/steps/login.steps.ts:8"
+              "location": "tests/steps/cmslogin.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 8179150403
+              "duration": 2148462903
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
-            "name": "I enter \"invalidemail\" in the email field",
+            "line": 9,
+            "name": "I enter \"invalidemail\" in the cms email field",
             "match": {
-              "location": "tests/steps/login.steps.ts:13"
+              "location": "tests/steps/cmslogin.steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 2871614361
+              "duration": 911368598
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 8,
-            "name": "I click on the password field",
+            "line": 10,
+            "name": "I click on the cms password field",
             "match": {
-              "location": "tests/steps/login.steps.ts:17"
+              "location": "tests/steps/cmslogin.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 49455898
+              "duration": 56923956
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 9,
-            "name": "I should see an error message \"Must be a valid email\"",
+            "line": 11,
+            "name": "I should see a cms email error message \"Email must be a valid email\"",
             "match": {
-              "location": "tests/steps/login.steps.ts:28"
+              "location": "tests/steps/cmslogin.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 8291137
+              "duration": 7873853
             }
           },
           {
@@ -74,18 +74,23 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73389321
+              "duration": 73811679
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@cms_login",
+            "line": 1
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "login-page;sign-in-with-empty-fields",
+        "id": "cms-login-page;sign-in-with-empty-fields",
         "keyword": "Scenario",
-        "line": 11,
+        "line": 13,
         "name": "Sign in with empty fields",
         "steps": [
           {
@@ -93,46 +98,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 331663672
+              "duration": 365137957
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 12,
-            "name": "I navigate to the login page",
+            "line": 14,
+            "name": "I navigate to the cms login page",
             "match": {
-              "location": "tests/steps/login.steps.ts:8"
+              "location": "tests/steps/cmslogin.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4834082993
+              "duration": 2020277823
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
-            "name": "I click on the \"Sign in\" button without entering email and password",
+            "line": 15,
+            "name": "I click on the \"Sign in\" button on cms without entering email and password",
             "match": {
-              "location": "tests/steps/login.steps.ts:20"
+              "location": "tests/steps/cmslogin.steps.ts:29"
             },
             "result": {
               "status": "passed",
-              "duration": 1916221529
+              "duration": 953258325
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "I should see an error message for empty fields",
+            "line": 16,
+            "name": "I should see a cms error message for empty fields",
             "match": {
-              "location": "tests/steps/login.steps.ts:33"
+              "location": "tests/steps/cmslogin.steps.ts:33"
             },
             "result": {
               "status": "passed",
-              "duration": 9335877
+              "duration": 7513288
             }
           },
           {
@@ -140,18 +145,23 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 68084777
+              "duration": 60645852
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@cms_login",
+            "line": 1
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "login-page;invalid-credentials",
+        "id": "cms-login-page;invalid-credentials",
         "keyword": "Scenario",
-        "line": 16,
+        "line": 18,
         "name": "Invalid credentials",
         "steps": [
           {
@@ -159,46 +169,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 337709922
+              "duration": 337608152
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 17,
-            "name": "I navigate to the login page",
+            "line": 19,
+            "name": "I navigate to the cms login page",
             "match": {
-              "location": "tests/steps/login.steps.ts:8"
+              "location": "tests/steps/cmslogin.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4362726505
+              "duration": 2070875853
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
-            "name": "I login with email \"sadikshya.bhusal+uat@ebpearls.com\" and password \"WrongPassword\"",
+            "line": 20,
+            "name": "I login to cms with email \"sadikshya.bhusal@ebpearls.com\" and password \"WrongPassword\"",
             "match": {
-              "location": "tests/steps/login.steps.ts:24"
+              "location": "tests/steps/cmslogin.steps.ts:38"
             },
             "result": {
               "status": "passed",
-              "duration": 2461014028
+              "duration": 942114126
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "I should see an error message \"Invalid login credentials\"",
+            "line": 21,
+            "name": "I should see a cms login error message \"Username or Password doesn't match\"",
             "match": {
-              "location": "tests/steps/login.steps.ts:28"
+              "location": "tests/steps/cmslogin.steps.ts:41"
             },
             "result": {
               "status": "passed",
-              "duration": 869905286
+              "duration": 871756196
             }
           },
           {
@@ -206,18 +216,23 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 94470927
+              "duration": 74651684
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@cms_login",
+            "line": 1
+          }
+        ],
         "type": "scenario"
       },
       {
         "description": "",
-        "id": "login-page;valid-credentials",
+        "id": "cms-login-page;valid-credentials",
         "keyword": "Scenario",
-        "line": 21,
+        "line": 23,
         "name": "Valid credentials",
         "steps": [
           {
@@ -225,59 +240,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 338222707
+              "duration": 369227120
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 22,
-            "name": "I navigate to the login page",
+            "line": 24,
+            "name": "I navigate to the cms login page",
             "match": {
-              "location": "tests/steps/login.steps.ts:8"
+              "location": "tests/steps/cmslogin.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4235150497
+              "duration": 1983789286
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 23,
-            "name": "I login with email \"sadikshya.bhusal+uat2@ebpearls.com\" and password \"Sadikshya@123\"",
+            "line": 25,
+            "name": "I login to cms with email \"sadikshya.bhusal+uat2@ebpearls.com\" and password \"Sadikshya@123\"",
             "match": {
-              "location": "tests/steps/login.steps.ts:24"
+              "location": "tests/steps/cmslogin.steps.ts:38"
             },
             "result": {
               "status": "passed",
-              "duration": 2457567707
+              "duration": 945824833
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
-            "name": "I should be navigated to dashboard page",
+            "line": 26,
+            "name": "I should be navigated to the cms dashboard page",
             "match": {
-              "location": "tests/steps/login.steps.ts:40"
+              "location": "tests/steps/cmslogin.steps.ts:48"
             },
             "result": {
               "status": "passed",
-              "duration": 1863466100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 25,
-            "name": "I should see my username \"Hi Jennifer Sharma\"",
-            "match": {
-              "location": "tests/steps/login.steps.ts:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 548394940
+              "duration": 5273680
             }
           },
           {
@@ -285,19 +287,355 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 67404924
+              "duration": 65626776
             }
           }
         ],
-        "tags": [],
+        "tags": [
+          {
+            "name": "@cms_login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cms-login-page",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "CMS Login Page",
+    "tags": [
+      {
+        "name": "@cms_login",
+        "line": 1
+      }
+    ],
+    "uri": "tests/features/cmslogin.feature"
+  },
+  {
+    "description": "  As a salon user\n  I want to be able to log So that I can access the salon dashboard",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-page;invalid-email-format",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Invalid email format",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 356629856
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "tests/steps/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4283674817
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter \"invalidemail\" in the email field",
+            "match": {
+              "location": "tests/steps/login.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2330492747
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the password field",
+            "match": {
+              "location": "tests/steps/login.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44559231
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see an error message \"Must be a valid email\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4320099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 69278486
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@webapp",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;sign-in-with-empty-fields",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Sign in with empty fields",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 320803371
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "tests/steps/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4181659669
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I click on the \"Sign in\" button without entering email and password",
+            "match": {
+              "location": "tests/steps/login.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2401979794
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see an error message for empty fields",
+            "match": {
+              "location": "tests/steps/login.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6095259
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 64244364
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@webapp",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;invalid-credentials",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 320283977
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "tests/steps/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4289606468
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I login with email \"sadikshya.bhusal+uat@ebpearls.com\" and password \"WrongPassword\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2455399977
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see an error message \"Invalid login credentials\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 869808130
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 69019467
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@webapp",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;valid-credentials",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 326424960
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I navigate to the login page",
+            "match": {
+              "location": "tests/steps/login.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4179820432
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I login with email \"sadikshya.bhusal+uat2@ebpearls.com\" and password \"Sadikshya@123\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2387964475
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I should be navigated to dashboard page",
+            "match": {
+              "location": "tests/steps/login.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1908565131
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I should see my username \"Hi Jennifer Sharma\"",
+            "match": {
+              "location": "tests/steps/login.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 552277036
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 67151461
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@webapp",
+            "line": 1
+          }
+        ],
         "type": "scenario"
       }
     ],
     "id": "login-page",
-    "line": 1,
+    "line": 2,
     "keyword": "Feature",
     "name": "Login Page",
-    "tags": [],
+    "tags": [
+      {
+        "name": "@webapp",
+        "line": 1
+      }
+    ],
     "uri": "tests/features/login.feature"
   }
 ]

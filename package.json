@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "scripts": {
     "test": "cucumber-js",
-    "test:bdd": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts"
+    "test:bdd": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts",
+    "test:weblogin": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/login.feature",
+    "test:cmslogin": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/cmslogin.feature",
+    "test:webapp": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js --tags '@webapp'"
 
   },
   "devDependencies": {
     "@cucumber/cucumber": "^11.3.0",
     "@playwright/test": "^1.55.0",
-    "@types/node": "^24.4.0",
-    "ts-node": "^10.9.1",
+    "@types/node": "^24.5.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
 }

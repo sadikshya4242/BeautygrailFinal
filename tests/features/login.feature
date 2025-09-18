@@ -1,3 +1,4 @@
+@webapp
 Feature: Login Page
   As a salon user
   I want to be able to log So that I can access the salon dashboard

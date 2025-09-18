@@ -33,9 +33,7 @@ export class LoginPage {
     this.passwordRequiredError = page.locator('text=Password is required'); 
   }
 
-  /**
-   * Navigate to the login page
-   */
+
   async goto() {
     // Navigate to the main UAT URL
     await this.page.goto('https://uat-webapp.beautygrail.co/');
