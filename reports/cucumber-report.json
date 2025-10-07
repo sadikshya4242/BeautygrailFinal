@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 298181657
+              "duration": 297891894
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2148462903
+              "duration": 2065180489
             }
           },
           {
@@ -40,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 911368598
+              "duration": 914596091
             }
           },
           {
@@ -53,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 56923956
+              "duration": 104918160
             }
           },
           {
@@ -66,7 +66,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7873853
+              "duration": 8534106
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 73811679
+              "duration": 75691711
             }
           }
         ],
@@ -98,7 +98,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 365137957
+              "duration": 343962611
             }
           },
           {
@@ -111,7 +111,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2020277823
+              "duration": 2112234241
             }
           },
           {
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 953258325
+              "duration": 917418767
             }
           },
           {
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7513288
+              "duration": 9549694
             }
           },
           {
@@ -145,7 +145,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 60645852
+              "duration": 85642367
             }
           }
         ],
@@ -169,7 +169,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 337608152
+              "duration": 310151977
             }
           },
           {
@@ -182,7 +182,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2070875853
+              "duration": 2124944523
             }
           },
           {
@@ -195,7 +195,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 942114126
+              "duration": 971962254
             }
           },
           {
@@ -208,7 +208,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 871756196
+              "duration": 902617873
             }
           },
           {
@@ -216,7 +216,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 74651684
+              "duration": 67607156
             }
           }
         ],
@@ -240,7 +240,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 369227120
+              "duration": 344121381
             }
           },
           {
@@ -253,7 +253,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1983789286
+              "duration": 1993272382
             }
           },
           {
@@ -266,7 +266,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 945824833
+              "duration": 964340843
             }
           },
           {
@@ -279,7 +279,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5273680
+              "duration": 3984244
             }
           },
           {
@@ -287,7 +287,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 65626776
+              "duration": 66717284
             }
           }
         ],
@@ -313,6 +313,396 @@
     "uri": "tests/features/cmslogin.feature"
   },
   {
+    "description": "  As a CMS admin\n  I want to manage tutorials\n  So that I can publish learning content",
+    "elements": [
+      {
+        "description": "",
+        "id": "cms-tutorials-management;add-a-new-tutorial-successfully",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Add a new tutorial successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 331982834
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am logged in to the CMS",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I navigate to the CMS tutorials page",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I click on \"Add new\" tutorial",
+            "match": {
+              "location": "tests/steps/cmstutorialadd.steps.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I enter tutorial name \"Playwright Intro\" and description \"This is a Playwright basics tutorial\"",
+            "match": {
+              "location": "tests/steps/cmstutorialadd.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I select educator \"Test Test\"",
+            "match": {
+              "location": "tests/steps/cmstutorialadd.steps.ts:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I select category \"Styling\"",
+            "match": {
+              "location": "tests/steps/cmstutorialadd.steps.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I enter rich text description",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I upload a cover picture \"tests/fixtures/cover.jpg\"",
+            "match": {
+              "location": "tests/steps/cmstutorialadd.steps.ts:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I upload a tutorial PDF \"tests/fixtures/sample.pdf\"",
+            "match": {
+              "location": "tests/steps/cmstutorialadd.steps.ts:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I submit the tutorial",
+            "match": {
+              "location": "tests/steps/cmstutorialadd.steps.ts:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see the new tutorial \"Playwright Intro\" in the tutorials list",
+            "match": {
+              "location": "tests/steps/cmstutorialadd.steps.ts:50"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81841614
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cms_tutorials",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cms-tutorials-management",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "CMS Tutorials Management",
+    "tags": [
+      {
+        "name": "@cms_tutorials",
+        "line": 1
+      }
+    ],
+    "uri": "tests/features/cmstutorialadd.feature"
+  },
+  {
+    "description": "  As a CMS admin\n  I want to filter tutorials by status\n  So that I can easily view tutorials in a specific state",
+    "elements": [
+      {
+        "description": "",
+        "id": "cms-tutorials-filter;verify-all-status-filter-options-are-visible",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify all status filter options are visible",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 326489881
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am logged in as a CMS admin",
+            "match": {
+              "location": "tests/steps/filterbystatus.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2946954621
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I navigate to the CMS tutorials page",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I open the tutorials status filter dropdown",
+            "match": {
+              "location": "tests/steps/filterbystatus.steps.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "All"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Published"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Unpublished"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Draft"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Awaiting Approval"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see the following filter options:",
+            "match": {
+              "location": "tests/steps/filterbystatus.steps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 67345376
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cms_tutorials_filter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cms-tutorials-filter;verify-published-filter-shows-only-published-tutorials",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Verify Published filter shows only published tutorials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 358008393
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am logged in as a CMS admin",
+            "match": {
+              "location": "tests/steps/filterbystatus.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3164944063
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I navigate to the CMS tutorials page",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I apply the \"Published\" status filter",
+            "match": {
+              "location": "tests/steps/filterbystatus.steps.ts:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see only tutorials with status \"PUBLISHED\"",
+            "match": {
+              "location": "tests/steps/filterbystatus.steps.ts:43"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 68746924
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@cms_tutorials_filter",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cms-tutorials-filter",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "CMS Tutorials Filter",
+    "tags": [
+      {
+        "name": "@cms_tutorials_filter",
+        "line": 1
+      }
+    ],
+    "uri": "tests/features/cmstutorialfilter.feature"
+  },
+  {
     "description": "  As a salon user\n  I want to be able to log So that I can access the salon dashboard",
     "elements": [
       {
@@ -327,7 +717,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 356629856
+              "duration": 338311904
             }
           },
           {
@@ -340,7 +730,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4283674817
+              "duration": 4463863842
             }
           },
           {
@@ -353,7 +743,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2330492747
+              "duration": 2365114271
             }
           },
           {
@@ -366,7 +756,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 44559231
+              "duration": 41824873
             }
           },
           {
@@ -379,7 +769,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4320099
+              "duration": 4260178
             }
           },
           {
@@ -387,7 +777,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 69278486
+              "duration": 65532716
             }
           }
         ],
@@ -411,7 +801,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 320803371
+              "duration": 322193548
             }
           },
           {
@@ -424,7 +814,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4181659669
+              "duration": 4184447365
             }
           },
           {
@@ -437,7 +827,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2401979794
+              "duration": 2442683967
             }
           },
           {
@@ -450,7 +840,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6095259
+              "duration": 10045724
             }
           },
           {
@@ -458,7 +848,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 64244364
+              "duration": 68733973
             }
           }
         ],
@@ -482,7 +872,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 320283977
+              "duration": 369353860
             }
           },
           {
@@ -495,7 +885,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4289606468
+              "duration": 4206113488
             }
           },
           {
@@ -508,7 +898,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2455399977
+              "duration": 2442588545
             }
           },
           {
@@ -521,7 +911,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 869808130
+              "duration": 870341781
             }
           },
           {
@@ -529,7 +919,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 69019467
+              "duration": 99272908
             }
           }
         ],
@@ -553,7 +943,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 326424960
+              "duration": 322710108
             }
           },
           {
@@ -566,7 +956,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4179820432
+              "duration": 4632260689
             }
           },
           {
@@ -579,7 +969,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2387964475
+              "duration": 1908307898
             }
           },
           {
@@ -592,7 +982,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1908565131
+              "duration": 1864047976
             }
           },
           {
@@ -605,7 +995,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 552277036
+              "duration": 974450473
             }
           },
           {
@@ -613,7 +1003,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 67151461
+              "duration": 85382524
             }
           }
         ],
