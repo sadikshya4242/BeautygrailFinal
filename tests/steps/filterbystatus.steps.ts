@@ -7,15 +7,23 @@ import type { CustomWorld } from '../../support/world';
 let loginPage: CMSLoginPage;
 let tutorialsPage: TutorialPage;
 
-Given('I am logged in as a CMS admin', async function (this: CustomWorld) {
-  loginPage = new CMSLoginPage(this.page);
-  tutorialsPage = new TutorialPage(this.page);
-
-  await loginPage.goto();
-  await loginPage.login('sadikshya.bhusal@ebpearls.com', 'Sadikshya@123');
-});
+// The login step is provided in `cmstutorialadd.steps.ts` (canonical implementation).
+// To avoid duplicate step definitions that cause Cucumber ambiguities, this file
+// intentionally does not define the login Given step. If a feature uses the
+// text "I am logged in as a CMS admin", update that feature to "I am logged in as a CMS"
+// or create a single shared login step in a central steps file.
+//
+// Example (commented out):
+// Given('I am logged in as a CMS admin', async function (this: CustomWorld) {
+//   loginPage = new CMSLoginPage(this.page);
+//   tutorialsPage = new TutorialPage(this.page);
+//
+//   await loginPage.goto();
+//   await loginPage.login('sadikshya.bhusal@ebpearls.com', 'Sadikshya@123');
+// });
 
 Given('I navigate to the CMS tutorials page', async function () {
+  if (!tutorialsPage) tutorialsPage = new TutorialPage(this.page);
   await tutorialsPage.gotoTutorials();
 });
 

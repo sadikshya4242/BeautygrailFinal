@@ -1,323 +1,10 @@
 [
   {
-    "description": "  As a CMS admin\n  I want to be able to log in\n  So that I can access the CMS dashboard",
+    "description": "  As a CMS admin\n  I want to add a new tutorial\n  So that it appears in the CMS tutorials list",
     "elements": [
       {
         "description": "",
-        "id": "cms-login-page;invalid-email-format",
-        "keyword": "Scenario",
-        "line": 7,
-        "name": "Invalid email format",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 297891894
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "I navigate to the cms login page",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2065180489
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I enter \"invalidemail\" in the cms email field",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 914596091
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "I click on the cms password field",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 104918160
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "I should see a cms email error message \"Email must be a valid email\"",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:21"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8534106
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 75691711
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cms_login",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "cms-login-page;sign-in-with-empty-fields",
-        "keyword": "Scenario",
-        "line": 13,
-        "name": "Sign in with empty fields",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 343962611
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
-            "name": "I navigate to the cms login page",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2112234241
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "I click on the \"Sign in\" button on cms without entering email and password",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 917418767
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "I should see a cms error message for empty fields",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9549694
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 85642367
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cms_login",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "cms-login-page;invalid-credentials",
-        "keyword": "Scenario",
-        "line": 18,
-        "name": "Invalid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 310151977
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 19,
-            "name": "I navigate to the cms login page",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2124944523
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "I login to cms with email \"sadikshya.bhusal@ebpearls.com\" and password \"WrongPassword\"",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 971962254
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "I should see a cms login error message \"Username or Password doesn't match\"",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:41"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 902617873
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 67607156
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cms_login",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "cms-login-page;valid-credentials",
-        "keyword": "Scenario",
-        "line": 23,
-        "name": "Valid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 344121381
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 24,
-            "name": "I navigate to the cms login page",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1993272382
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 25,
-            "name": "I login to cms with email \"sadikshya.bhusal+uat2@ebpearls.com\" and password \"Sadikshya@123\"",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 964340843
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 26,
-            "name": "I should be navigated to the cms dashboard page",
-            "match": {
-              "location": "tests/steps/cmslogin.steps.ts:48"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3984244
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 66717284
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cms_login",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "cms-login-page",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "CMS Login Page",
-    "tags": [
-      {
-        "name": "@cms_login",
-        "line": 1
-      }
-    ],
-    "uri": "tests/features/cmslogin.feature"
-  },
-  {
-    "description": "  As a CMS admin\n  I want to manage tutorials\n  So that I can publish learning content",
-    "elements": [
-      {
-        "description": "",
-        "id": "cms-tutorials-management;add-a-new-tutorial-successfully",
+        "id": "add-a-new-tutorial;add-a-new-tutorial-successfully",
         "keyword": "Scenario",
         "line": 11,
         "name": "Add a new tutorial successfully",
@@ -327,26 +14,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 331982834
+              "duration": 641912699
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 8,
-            "name": "I am logged in to the CMS",
+            "name": "I am logged in as a CMS",
+            "match": {
+              "location": "tests\\steps\\cmstutorialadd.steps.ts:13"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 30027747200,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Asus\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:588:17)\n    at processTimers (node:internal/timers:523:7)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "I navigate to the CMS tutorials page",
+            "name": "I navigate to the Tutorials page",
+            "match": {
+              "location": "tests\\steps\\cmstutorialadd.steps.ts:25"
+            },
             "result": {
-              "status": "ambiguous",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -356,7 +50,7 @@
             "line": 12,
             "name": "I click on \"Add new\" tutorial",
             "match": {
-              "location": "tests/steps/cmstutorialadd.steps.ts:13"
+              "location": "tests\\steps\\cmstutorialadd.steps.ts:33"
             },
             "result": {
               "status": "skipped",
@@ -367,9 +61,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "I enter tutorial name \"Playwright Intro\" and description \"This is a Playwright basics tutorial\"",
+            "name": "I enter tutorial name \"Playwright Intro\", description \"This is a Playwright basics tutorial\", educator \"Test Test\", category \"Styling\", and rich text \"This is a rich text description\"",
             "match": {
-              "location": "tests/steps/cmstutorialadd.steps.ts:17"
+              "location": "tests\\steps\\cmstutorialadd.steps.ts:41"
             },
             "result": {
               "status": "skipped",
@@ -380,9 +74,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 14,
-            "name": "I select educator \"Test Test\"",
+            "name": "I upload a cover picture \"C:\\Users\\Asus\\OneDrive\\Desktop\\Final project\\BDD\\Images\\coverimage.jpg\"",
             "match": {
-              "location": "tests/steps/cmstutorialadd.steps.ts:24"
+              "location": "tests\\steps\\cmstutorialadd.steps.ts:58"
             },
             "result": {
               "status": "skipped",
@@ -393,9 +87,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 15,
-            "name": "I select category \"Styling\"",
+            "name": "I upload a tutorial PDF \"C:\\Users\\Asus\\OneDrive\\Desktop\\Final project\\BDD\\Images\\Invoice.pdf\"",
             "match": {
-              "location": "tests/steps/cmstutorialadd.steps.ts:29"
+              "location": "tests\\steps\\cmstutorialadd.steps.ts:66"
             },
             "result": {
               "status": "skipped",
@@ -406,45 +100,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "I enter rich text description",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
-            "name": "I upload a cover picture \"tests/fixtures/cover.jpg\"",
-            "match": {
-              "location": "tests/steps/cmstutorialadd.steps.ts:38"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 18,
-            "name": "I upload a tutorial PDF \"tests/fixtures/sample.pdf\"",
-            "match": {
-              "location": "tests/steps/cmstutorialadd.steps.ts:42"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 19,
             "name": "I submit the tutorial",
             "match": {
-              "location": "tests/steps/cmstutorialadd.steps.ts:46"
+              "location": "tests\\steps\\cmstutorialadd.steps.ts:73"
             },
             "result": {
               "status": "skipped",
@@ -454,10 +112,10 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
+            "line": 17,
             "name": "I should see the new tutorial \"Playwright Intro\" in the tutorials list",
             "match": {
-              "location": "tests/steps/cmstutorialadd.steps.ts:50"
+              "location": "tests\\steps\\cmstutorialadd.steps.ts:81"
             },
             "result": {
               "status": "skipped",
@@ -469,7 +127,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 81841614
+              "duration": 615559699
             }
           }
         ],
@@ -482,550 +140,16 @@
         "type": "scenario"
       }
     ],
-    "id": "cms-tutorials-management",
+    "id": "add-a-new-tutorial",
     "line": 2,
     "keyword": "Feature",
-    "name": "CMS Tutorials Management",
+    "name": "Add a new tutorial",
     "tags": [
       {
         "name": "@cms_tutorials",
         "line": 1
       }
     ],
-    "uri": "tests/features/cmstutorialadd.feature"
-  },
-  {
-    "description": "  As a CMS admin\n  I want to filter tutorials by status\n  So that I can easily view tutorials in a specific state",
-    "elements": [
-      {
-        "description": "",
-        "id": "cms-tutorials-filter;verify-all-status-filter-options-are-visible",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Verify all status filter options are visible",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 326489881
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "I am logged in as a CMS admin",
-            "match": {
-              "location": "tests/steps/filterbystatus.steps.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2946954621
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I navigate to the CMS tutorials page",
-            "result": {
-              "status": "ambiguous",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "I open the tutorials status filter dropdown",
-            "match": {
-              "location": "tests/steps/filterbystatus.steps.ts:22"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "All"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Published"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Unpublished"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Draft"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Awaiting Approval"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "I should see the following filter options:",
-            "match": {
-              "location": "tests/steps/filterbystatus.steps.ts:27"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 67345376
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cms_tutorials_filter",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "cms-tutorials-filter;verify-published-filter-shows-only-published-tutorials",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "Verify Published filter shows only published tutorials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 358008393
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "I am logged in as a CMS admin",
-            "match": {
-              "location": "tests/steps/filterbystatus.steps.ts:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3164944063
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I navigate to the CMS tutorials page",
-            "result": {
-              "status": "ambiguous",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 21,
-            "name": "I apply the \"Published\" status filter",
-            "match": {
-              "location": "tests/steps/filterbystatus.steps.ts:36"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "I should see only tutorials with status \"PUBLISHED\"",
-            "match": {
-              "location": "tests/steps/filterbystatus.steps.ts:43"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 68746924
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@cms_tutorials_filter",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "cms-tutorials-filter",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "CMS Tutorials Filter",
-    "tags": [
-      {
-        "name": "@cms_tutorials_filter",
-        "line": 1
-      }
-    ],
-    "uri": "tests/features/cmstutorialfilter.feature"
-  },
-  {
-    "description": "  As a salon user\n  I want to be able to log So that I can access the salon dashboard",
-    "elements": [
-      {
-        "description": "",
-        "id": "login-page;invalid-email-format",
-        "keyword": "Scenario",
-        "line": 6,
-        "name": "Invalid email format",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 338311904
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 7,
-            "name": "I navigate to the login page",
-            "match": {
-              "location": "tests/steps/login.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4463863842
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 8,
-            "name": "I enter \"invalidemail\" in the email field",
-            "match": {
-              "location": "tests/steps/login.steps.ts:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2365114271
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "I click on the password field",
-            "match": {
-              "location": "tests/steps/login.steps.ts:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 41824873
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I should see an error message \"Must be a valid email\"",
-            "match": {
-              "location": "tests/steps/login.steps.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4260178
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 65532716
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@webapp",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login-page;sign-in-with-empty-fields",
-        "keyword": "Scenario",
-        "line": 12,
-        "name": "Sign in with empty fields",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 322193548
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 13,
-            "name": "I navigate to the login page",
-            "match": {
-              "location": "tests/steps/login.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4184447365
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "I click on the \"Sign in\" button without entering email and password",
-            "match": {
-              "location": "tests/steps/login.steps.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2442683967
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "I should see an error message for empty fields",
-            "match": {
-              "location": "tests/steps/login.steps.ts:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10045724
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 68733973
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@webapp",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login-page;invalid-credentials",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Invalid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 369353860
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 18,
-            "name": "I navigate to the login page",
-            "match": {
-              "location": "tests/steps/login.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4206113488
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "I login with email \"sadikshya.bhusal+uat@ebpearls.com\" and password \"WrongPassword\"",
-            "match": {
-              "location": "tests/steps/login.steps.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2442588545
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "I should see an error message \"Invalid login credentials\"",
-            "match": {
-              "location": "tests/steps/login.steps.ts:28"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 870341781
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 99272908
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@webapp",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login-page;valid-credentials",
-        "keyword": "Scenario",
-        "line": 22,
-        "name": "Valid credentials",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 322710108
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "I navigate to the login page",
-            "match": {
-              "location": "tests/steps/login.steps.ts:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4632260689
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "I login with email \"sadikshya.bhusal+uat2@ebpearls.com\" and password \"Sadikshya@123\"",
-            "match": {
-              "location": "tests/steps/login.steps.ts:24"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1908307898
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "I should be navigated to dashboard page",
-            "match": {
-              "location": "tests/steps/login.steps.ts:40"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1864047976
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 26,
-            "name": "I should see my username \"Hi Jennifer Sharma\"",
-            "match": {
-              "location": "tests/steps/login.steps.ts:44"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 974450473
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 85382524
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@webapp",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      }
-    ],
-    "id": "login-page",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Login Page",
-    "tags": [
-      {
-        "name": "@webapp",
-        "line": 1
-      }
-    ],
-    "uri": "tests/features/login.feature"
+    "uri": "tests\\features\\cmstutorialadd.feature"
   }
 ]

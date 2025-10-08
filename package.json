@@ -6,6 +6,9 @@
     "test:bdd": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts",
     "test:weblogin": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/login.feature",
     "test:cmslogin": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/cmslogin.feature",
+    "test:cmsaddtutorials": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/cmstutorialadd.feature",
+    "test:cmstutorialsfilter": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/cmstutorialfilter.feature",
+    "test:cmstutorialPage": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/cmstutorialPage.feature",
     "test:webapp": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js --tags '@webapp'"
 
   },

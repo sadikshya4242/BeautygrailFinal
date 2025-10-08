@@ -6,7 +6,7 @@ module.exports = {
       'tests/support/world.ts'    
     ],
     requireModule: ['ts-node/register'],  
-    paths: ['tests/features/**/*.feature'], 
+    // paths: ['tests/features/**/*.feature'], 
     format: [
       'progress',                      
       'json:reports/cucumber-report.json'   

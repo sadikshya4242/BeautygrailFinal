@@ -5,7 +5,7 @@ Feature: CMS Tutorials Filter
   So that I can easily view tutorials in a specific state
 
   Background:
-    Given I am logged in as a CMS admin
+    Given I am logged in as a CMS
     And I navigate to the CMS tutorials page
 
   Scenario: Verify all status filter options are visible
