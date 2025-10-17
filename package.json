@@ -9,7 +9,11 @@
     "test:cmsaddtutorials": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/cmstutorialadd.feature",
     "test:cmstutorialsfilter": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/cmstutorialfilter.feature",
     "test:cmstutorialPage": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/cmstutorialPage.feature",
-    "test:webapp": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js --tags '@webapp'"
+     "test:cmssearchfeature": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js tests/features/cmstutorialsearch.feature",
+    "test:webapp": "cucumber-js --require ts-node/register --require tests/steps/**/*.ts --require support/**/*.ts --config cucumber.js --tags '@webapp'",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit"
 
   },
   "devDependencies": {
